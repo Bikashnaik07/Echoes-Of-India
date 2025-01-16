@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Echoes of India - Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Echoes of India Logo">
+            <h1>Echoes of India</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#explore">Explore</a></li>
+                <li><a href="#tours">Virtual Tours</a></li>
+                <li><a href="#quizzes">Quizzes</a></li>
+                <li><a href="hover.html">Adventure</a></li>
+                <li class="profile-icon-item">
+                    <a href="profile.html" class="profile-icon-link">
+                        <div class="profile-icon">
+                            <img src="user1.png" alt="Profile Icon">
+                        </div>
+                    </a>
+                </li>
+            </ul>
+            <button class="menu-toggle">&#9776;</button>
+        </nav>
+    </header>    
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <video autoplay muted loop id="hero-video">
+            <source src="Welcome to India ! [CINEMATIC TRAVEL FILM].mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="hero-content">
+            <h2>Discover the Rich Culture & Heritage of India</h2>
+            <p>Immerse yourself in a journey through India’s cultural heritage, explore virtual tours, and test your knowledge.</p>
+            <a href="#" class="cta-button">Get Started</a>
+        </div>
+    </section>    
+
+    <!-- Explore Section -->
+    <section id="explore" class="explore-section">
+        <h3>Explore State-wise Heritage</h3>
+        <div class="state-cards">
+            <!-- Tamil Nadu -->
+            <div class="state-card">
+                <img src="tamil-nadu.jpg" alt="Temples of Tamil Nadu">
+                <h4>Tamil Nadu</h4>
+                <p>Explore temples, art, and tradition of Tamil Nadu.</p>
+            </div>
+            <!-- Rajasthan -->
+            <div class="state-card">
+                <img src="rajasthan.jpg" alt="Royal Rajasthan Heritage">
+                <h4>Rajasthan</h4>
+                <p>Dive into the royal heritage of Rajasthan’s palaces and forts.</p>
+            </div>
+            <!-- Kerala -->
+            <div class="state-card">
+                <img src="kerala.jpg" alt="Natural Beauty of Kerala">
+                <h4>Kerala</h4>
+                <p>Discover the natural beauty and traditions of Kerala.</p>
+            </div>
+            <!-- Uttar Pradesh -->
+            <div class="state-card">
+                <img src="uttar-pradesh.jpg" alt="Uttar Pradesh Heritage">
+                <h4>Uttar Pradesh</h4>
+                <p>Visit the iconic Taj Mahal and explore ancient cities like Varanasi.</p>
+            </div>
+            <!-- Maharashtra -->
+            <div class="state-card">
+                <img src="maharashtra.jpg" alt="Maharashtra Culture">
+                <h4>Maharashtra</h4>
+                <p>Explore the rock-cut caves of Ajanta and Ellora, and Mumbai’s colonial architecture.</p>
+            </div>
+            <!-- Gujarat -->
+            <div class="state-card">
+                <img src="gujarat.jpg" alt="Heritage of Gujarat">
+                <h4>Gujarat</h4>
+                <p>Discover the Rann of Kutch, historic temples, and traditional textiles.</p>
+            </div>
+            <!-- West Bengal -->
+            <div class="state-card">
+                <img src="west-bengal.jpg" alt="West Bengal Culture">
+                <h4>West Bengal</h4>
+                <p>Explore Kolkata’s colonial heritage, the Sundarbans, and vibrant festivals.</p>
+            </div>
+            <!-- Karnataka -->
+            <div class="state-card">
+                <img src="karnataka.jpg" alt="Karnataka Heritage">
+                <h4>Karnataka</h4>
+                <p>Uncover the rich history of Hampi and the architectural wonders of Mysore.</p>
+            </div>
+            <!-- Odisha -->
+            <div class="state-card">
+                <img src="odisha.jpg" alt="Odisha Temples">
+                <h4>Odisha</h4>
+                <p>Visit the magnificent Konark Sun Temple and explore the coastal culture.</p>
+            </div>
+            <!-- Punjab -->
+            <div class="state-card">
+                <img src="punjab.jpg" alt="Heritage of Punjab">
+                <h4>Punjab</h4>
+                <p>Experience the rich Sikh history and the Golden Temple at Amritsar.</p>
+            </div>
+            <!-- Assam -->
+            <div class="state-card">
+                <img src="assam.jpeg" alt="Assam Tea Gardens">
+                <h4>Assam</h4>
+                <p>Explore Assam’s tea gardens, Kamakhya Temple, and vibrant culture.</p>
+            </div>
+            <!-- Himachal Pradesh -->
+            <div class="state-card">
+                <img src="himachal-pradesh.jpg" alt="Himachal Temples and Mountains">
+                <h4>Himachal Pradesh</h4>
+                <p>Discover the serene mountains, Buddhist monasteries, and historic temples.</p>
+            </div>
+            <!-- Jammu and Kashmir -->
+            <div class="state-card">
+                <img src="jammu-kashmir.jpg" alt="Jammu and Kashmir Landscapes">
+                <h4>Jammu and Kashmir</h4>
+                <p>Marvel at the breathtaking landscapes, Mughal gardens, and traditional crafts.</p>
+            </div>
+            <!-- Madhya Pradesh -->
+            <div class="state-card">
+                <img src="madhya-pradesh.jpg" alt="Madhya Pradesh Heritage">
+                <h4>Madhya Pradesh</h4>
+                <p>Explore Khajuraho’s temples, Sanchi’s stupas, and Gwalior’s forts.</p>
+            </div>
+            <!-- Bihar -->
+            <div class="state-card">
+                <img src="bihar.jpg" alt="Bihar Ancient History">
+                <h4>Bihar</h4>
+                <p>Step into history with Bodh Gaya’s Buddhist heritage and the ruins of Nalanda University.</p>
+            </div>
+            <!-- Andhra Pradesh -->
+            <div class="state-card">
+                <img src="andhra-pradesh.jpeg" alt="Andhra Pradesh Temples">
+                <h4>Andhra Pradesh</h4>
+                <p>Discover the spiritual significance of Tirupati and architectural marvels.</p>
+            </div>
+            <!-- Telangana -->
+            <div class="state-card">
+                <img src="telangana.jpg" alt="Telangana Forts">
+                <h4>Telangana</h4>
+                <p>Unveil the heritage of Hyderabad with its historic Golconda Fort and Charminar.</p>
+            </div>
+            <!-- Sikkim -->
+            <div class="state-card">
+                <img src="sikkim.jpg" alt="Sikkim Monasteries">
+                <h4>Sikkim</h4>
+                <p>Visit the monasteries and pristine landscapes of this peaceful Himalayan state.</p>
+            </div>
+            <!-- Meghalaya -->
+            <div class="state-card">
+                <img src="meghalaya.jpg" alt="Meghalaya Living Root Bridges">
+                <h4>Meghalaya</h4>
+                <p>Explore the living root bridges and the scenic beauty of Meghalaya.</p>
+            </div>
+            <!-- Nagaland -->
+            <div class="state-card">
+                <img src="nagaland.jpg" alt="Nagaland Festivals">
+                <h4>Nagaland</h4>
+                <p>Experience the vibrant tribal culture and festivals of Nagaland.</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Virtual Heritage Tours Section -->
+    <section id="tours" class="virtual-tours">
+        <h3>Virtual Heritage Tours</h3>
+        <div class="tour-container">
+            <div class="tour">
+                <img src="taj-mahal.jpg" alt="Taj Mahal">
+                <h4>Taj Mahal</h4>
+            </div>
+            <div class="tour">
+                <img src="hawa-mahal.jpg" alt="Hawa Mahal">
+                <h4>Hawa Mahal</h4>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quiz Section -->
+    <section id="quizzes" class="quiz-section">
+        <h3>Test Your Knowledge</h3>
+        <a href="quiz.html">
+        <div class="quiz-container">
+            <button class="cta-button">Take a Quiz</button>
+        </div>
+    </a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Echoes of India. All rights reserved.</p>
+        <div class="social-links">
+            <a href="#">Twitter</a>
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+        </div>
+    </footer>
+
+    <script src="dashboard.js"></script>
+</body>
+</html>

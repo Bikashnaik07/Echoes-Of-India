@@ -1,0 +1,297 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #1f1d2b;
+    color: white;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Header Section */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    background: linear-gradient(45deg, #252954, #1f1d2b);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+    margin-right: 15px;
+    border-radius: 50%;
+}
+
+.logo h1 {
+    font-size: 1.5rem;
+    color: #fb37ff;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin-right: 0; /* Ensure no extra margin on the ul */
+}
+
+nav ul li {
+    margin: 0 20px; /* Space between each item */
+}
+
+nav ul li:last-child {
+    margin-right: 0; /* Remove margin from the last item */
+}
+
+nav ul li.profile-icon-item {
+    margin-right: 0; /* Specifically target the profile icon item */
+}
+
+nav ul li a {
+    color: #18b2de;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #9b51e0;
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: white;
+}
+
+.profile-icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 0 20px;
+    overflow: hidden; /* Ensures video doesn’t spill out of the section */
+}
+
+#hero-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; /* Sends the video behind the content */
+}
+
+.hero-content {
+    z-index: 1; /* Keeps the text and button on top of the video */
+}
+
+.hero h2 {
+    font-size: 3.5rem;
+    letter-spacing: 2px;
+    background: #ffffff;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    margin-bottom: 30px; /* Adjusts the space between the paragraph and the button */
+}
+
+.cta-button {
+    padding: 12px 30px;
+    border-radius: 50px;
+    background: linear-gradient(45deg, #9b51e0, #3081ed);
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cta-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(255, 0, 255, 0.5);
+}
+
+
+/* Explore Section */
+.explore-section {
+    padding: 80px 5%;
+    background: #252954;
+    text-align: center;
+}
+
+.state-cards {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+
+.state-card {
+    background: #1f1d2b;
+    padding: 20px;
+    border-radius: 15px;
+    width: 30%;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.state-card:hover {
+    background: #3081ed;
+    transform: scale(1.05);
+}
+
+.state-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.state-card h4 {
+    color: #fb37ff;
+}
+
+/* Virtual Heritage Tours Section */
+.virtual-tours {
+    padding: 80px 5%;
+    text-align: center;
+    background: linear-gradient(45deg, #1f1d2b, #252954);
+}
+
+.tour-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+
+.tour {
+    background: #1f1d2b;
+    padding: 20px;
+    border-radius: 15px;
+    width: 45%;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.tour:hover {
+    transform: scale(1.05);
+}
+
+.tour img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.tour h4 {
+    color: #fb37ff;
+    margin-top: 10px;
+}
+
+/* Quiz Section */
+.quiz-section {
+    padding: 50px 5%;
+    text-align: center;
+    background: #252954;
+}
+
+/* Footer Section */
+footer {
+    padding: 40px 5%;
+    text-align: center;
+    background: #1f1d2b;
+    border-top: 2px solid #9b51e0;
+}
+
+footer .social-links a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer .social-links a:hover {
+    color: #fb37ff;
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+    nav ul {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .state-card, .tour {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero h2 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .state-card, .tour {
+        width: 100%;
+    }
+}
