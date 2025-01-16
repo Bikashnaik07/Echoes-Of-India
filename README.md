@@ -29,7 +29,7 @@ Clone the repository:
 bash
 Copy
 Edit
-git clone https://github.com/yourusername/echoes-of-india.git
+git clone https://github.com/Bikashnaik07/echoes-of-india.git
 Navigate to the project directory:
 bash
 Copy
